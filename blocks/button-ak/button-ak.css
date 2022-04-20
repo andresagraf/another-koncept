@@ -1,0 +1,19 @@
+.buttonak__link {
+  background-color: #E9521D;
+  color: white !important;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 1.5625rem;
+  padding-bottom: 1.5625rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  display: block;
+  margin-top: 0.9375rem; }
+  .buttonak__link:hover {
+    opacity: 0.8;
+    color: white; }
+  .buttonak__link:active, .buttonak__link:focus, .buttonak__link:active {
+    color: white; }
+
+/*# sourceMappingURL=button-ak.css.map */

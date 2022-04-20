@@ -1,0 +1,31 @@
+@function rem-calc($size) {
+    $remSize: $size * 0.0625;
+    @return #{$remSize}rem;
+}
+
+$color__flamingo: #E9521D;
+
+
+.buttonak {
+	&__link {
+		background-color: $color__flamingo;
+		color: white!important;
+		 font-family: 'Montserrat', sans-serif;
+		 text-align:center;
+		 text-decoration: none;
+		 padding-top: rem-calc(25);
+		 padding-bottom: rem-calc(25);
+		 font-weight:600;
+		 font-size:rem-calc(15);
+		 display: block;
+		 margin-top:rem-calc(15);
+		&:hover {
+			opacity: 0.8;
+			color: white;
+		}
+		&:active, &:focus, &:active {
+			color: white;
+		}
+	}
+}
+

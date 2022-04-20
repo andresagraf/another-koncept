@@ -1,0 +1,93 @@
+@function rem-calc($size) {
+    $remSize: $size * 0.0625;
+    @return #{$remSize}rem;
+}
+
+@mixin colums-mob {
+	@media (max-width: rem-calc(992)) {
+		grid-template-columns: auto auto auto auto;
+	}
+	@media (max-width: rem-calc(642)) {
+		grid-template-columns: auto auto;
+	}
+}
+
+.clients {
+	.clientslist {
+		margin-left: auto;
+		margin-right: auto;
+		display: grid;
+		grid-column-gap:rem-calc(30);
+		grid-row-gap: rem-calc(90);
+		text-align: center;
+		justify-items: center;
+		align-items: center;
+		padding: 0 rem-calc(25) 0 rem-calc(25);		
+		&.one {
+			grid-template-columns: auto;
+			max-width: rem-calc(1092);
+			@include colums-mob;
+		}
+		&.two {
+			grid-template-columns: auto auto;
+			max-width: rem-calc(1092);
+			@include colums-mob;
+		}
+		&.three {
+			grid-template-columns: auto auto auto;
+			max-width: rem-calc(900);
+			@include colums-mob;
+		}
+		&.four {
+			grid-template-columns: auto auto  auto auto;
+			max-width: rem-calc(900);
+			@include colums-mob;
+		}
+		&.five {
+			grid-template-columns: auto auto auto auto auto;
+			max-width: rem-calc(900);
+			@include colums-mob;
+		}
+		&.six {
+			grid-template-columns: auto auto auto auto auto auto;
+			max-width: rem-calc(900);			
+			.cont-img {
+				height: rem-calc(60);
+			}
+			@include colums-mob;
+		}
+		&.seven {
+			grid-template-columns: auto auto auto auto auto auto auto;
+			max-width: rem-calc(900);			
+			.cont-img {
+				height: rem-calc(60);
+			}
+			@include colums-mob;
+		}
+		&.eight {
+			grid-template-columns: auto auto auto auto auto auto auto auto;
+			max-width: rem-calc(1120);			
+			.cont-img {
+				height: rem-calc(60);
+			}
+			@include colums-mob;
+		}	
+		.cont-img {
+				width: fit-content;
+				height: rem-calc(84);
+				img {
+					width: 100%;
+					height: 100%;
+					min-width: auto;
+					min-height: auto;
+					-o-object-fit: contain;
+					object-fit: contain;
+					-o-object-position: center;
+					object-position: center;
+					-webkit-transform: none;
+					transform: none;
+					position: static;
+				}
+			}
+		}	
+	}	

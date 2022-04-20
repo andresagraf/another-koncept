@@ -1,0 +1,105 @@
+.clients .clientslist {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-column-gap: 1.875rem;
+  grid-row-gap: 5.625rem;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  padding: 0 1.5625rem 0 1.5625rem; }
+  .clients .clientslist.one {
+    grid-template-columns: auto;
+    max-width: 68.25rem; }
+    @media (max-width: 62rem) {
+      .clients .clientslist.one {
+        grid-template-columns: auto auto auto auto; } }
+    @media (max-width: 40.125rem) {
+      .clients .clientslist.one {
+        grid-template-columns: auto auto; } }
+  .clients .clientslist.two {
+    grid-template-columns: auto auto;
+    max-width: 68.25rem; }
+    @media (max-width: 62rem) {
+      .clients .clientslist.two {
+        grid-template-columns: auto auto auto auto; } }
+    @media (max-width: 40.125rem) {
+      .clients .clientslist.two {
+        grid-template-columns: auto auto; } }
+  .clients .clientslist.three {
+    grid-template-columns: auto auto auto;
+    max-width: 56.25rem; }
+    @media (max-width: 62rem) {
+      .clients .clientslist.three {
+        grid-template-columns: auto auto auto auto; } }
+    @media (max-width: 40.125rem) {
+      .clients .clientslist.three {
+        grid-template-columns: auto auto; } }
+  .clients .clientslist.four {
+    grid-template-columns: auto auto  auto auto;
+    max-width: 56.25rem; }
+    @media (max-width: 62rem) {
+      .clients .clientslist.four {
+        grid-template-columns: auto auto auto auto; } }
+    @media (max-width: 40.125rem) {
+      .clients .clientslist.four {
+        grid-template-columns: auto auto; } }
+  .clients .clientslist.five {
+    grid-template-columns: auto auto auto auto auto;
+    max-width: 56.25rem; }
+    @media (max-width: 62rem) {
+      .clients .clientslist.five {
+        grid-template-columns: auto auto auto auto; } }
+    @media (max-width: 40.125rem) {
+      .clients .clientslist.five {
+        grid-template-columns: auto auto; } }
+  .clients .clientslist.six {
+    grid-template-columns: auto auto auto auto auto auto;
+    max-width: 56.25rem; }
+    .clients .clientslist.six .cont-img {
+      height: 3.75rem; }
+    @media (max-width: 62rem) {
+      .clients .clientslist.six {
+        grid-template-columns: auto auto auto auto; } }
+    @media (max-width: 40.125rem) {
+      .clients .clientslist.six {
+        grid-template-columns: auto auto; } }
+  .clients .clientslist.seven {
+    grid-template-columns: auto auto auto auto auto auto auto;
+    max-width: 56.25rem; }
+    .clients .clientslist.seven .cont-img {
+      height: 3.75rem; }
+    @media (max-width: 62rem) {
+      .clients .clientslist.seven {
+        grid-template-columns: auto auto auto auto; } }
+    @media (max-width: 40.125rem) {
+      .clients .clientslist.seven {
+        grid-template-columns: auto auto; } }
+  .clients .clientslist.eight {
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    max-width: 70rem; }
+    .clients .clientslist.eight .cont-img {
+      height: 3.75rem; }
+    @media (max-width: 62rem) {
+      .clients .clientslist.eight {
+        grid-template-columns: auto auto auto auto; } }
+    @media (max-width: 40.125rem) {
+      .clients .clientslist.eight {
+        grid-template-columns: auto auto; } }
+  .clients .clientslist .cont-img {
+    width: fit-content;
+    height: 5.25rem; }
+    .clients .clientslist .cont-img img {
+      width: 100%;
+      height: 100%;
+      min-width: auto;
+      min-height: auto;
+      -o-object-fit: contain;
+      object-fit: contain;
+      -o-object-position: center;
+      object-position: center;
+      -webkit-transform: none;
+      transform: none;
+      position: static; }
+
+/*# sourceMappingURL=customers.css.map */

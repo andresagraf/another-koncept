@@ -1,0 +1,109 @@
+@function rem-calc($size) {
+    $remSize: $size * 0.0625;
+    @return #{$remSize}rem;
+}
+
+.slider-photos-container {
+	.slider-photos {
+		max-width: 100%;
+		margin-left:auto;
+		margin-right: auto;
+		font-family: 'Montserrat', sans-serif;		
+		text-align: center;
+		margin-bottom: rem-calc(47);
+		.cont-img {
+				width: fit-content;
+				height: rem-calc(423);
+				
+				img {
+					width: 100%;
+					height: 100%;
+					min-width: auto;
+					min-height: auto;
+					-o-object-fit: cover;
+					object-fit: cover;
+					-o-object-position: center;
+					object-position: center;
+					-webkit-transform: none;
+					transform: none;
+					position: static;
+				}
+			}		
+
+		&__testimony {
+			margin-left:auto;
+			margin-right: auto;
+			p {
+				font-style: normal;
+				font-weight: normal;
+				font-size: rem-calc(15);
+				line-height: rem-calc(23);
+				font-style: italic;
+			}
+		}
+		&__name {
+			font-style: normal;
+			font-weight: 600;
+			font-style: italic;
+		}
+		&__degree {
+			font-style: normal;
+			font-weight: normal;			
+		}
+	}
+	.slick-prev, .slick-next {
+		font-size: 0;
+		line-height: 0;
+		position: absolute;
+		top: 50%;
+		display: none!important;
+		width: rem-calc(19);
+		height: rem-calc(46);
+		padding: 0;
+		-webkit-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		cursor: pointer;
+		color: transparent;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		display: block!important;
+		@media (max-width: rem-calc(709)) {
+			top: 55%;
+		}
+		@media (min-width: rem-calc(1019)) {
+		display: inline-block!important;
+		}
+	}
+
+	.slick-prev {
+		left: rem-calc(-85);
+		background-image: url(./img/left.svg);
+		display:none;
+		z-index: 10000;
+		@media (max-width: rem-calc(909)) {
+		left: rem-calc(40);	
+		}
+		
+	}
+
+	.slick-next {
+		right: rem-calc(-85);
+		background-image: url(./img/right.svg);
+		display:none;
+		@media (max-width: rem-calc(909)) {
+		right: rem-calc(40);	
+		}		
+	}
+
+	.slick-prev:before, .slick-next:before {
+		font-family: 'slick';
+		font-size: rem-calc(20);
+		line-height: 1;
+		opacity: .75;
+		color: white;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}	
+}
